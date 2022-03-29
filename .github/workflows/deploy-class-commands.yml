@@ -30,7 +30,7 @@ jobs:
         with: 
             certificate: '${{secrets.BASE64_PFX_CONTENT}}'
             password: '${{ secrets.PASSWORD }}'
-            folder: 'files'
+            folder: 'ClassCommands/bin/Release/netcoreapp3.1/win-x64/publish/*.exe'
             recursive: true
 
       - uses: actions/create-release@v1
