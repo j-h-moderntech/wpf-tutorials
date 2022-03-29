@@ -30,6 +30,8 @@ jobs:
         with: 
             certificate: '${{secrets.BASE64_PFX_CONTENT}}'
             password: '${{ secrets.PASSWORD }}'
+            certificatesha1: '${{ secrets.CERTHASH }}'
+            certificatename: '${{ secrets.CERTNAME }}'
             folder: 'ClassCommands/bin/Release/netcoreapp3.1/win-x64/publish'
             recursive: true
 
